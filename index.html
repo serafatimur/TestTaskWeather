@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>TestTask</title>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" type="text/css" href="resources/CSS/style.css">
+        <!--<link rel="shortcut icon" type="image/x-icon" href="">-->
+    </head>
+    <body>
+        <div id="main">
+            <div id="selectedDay">
+                <div id="selectedDayText">
+                    <span>Сегодня, 21 апреля 2016</span>
+                </div>
+                <div id="precipitation">
+                    <div id="precipitationText"><span>Переменная облачность</span></div>
+                    <div id="precipitationImage">
+                        <div id="circle1" class="circle center"></div>
+                        <div id="circle2" class="circle center"></div>
+                        <div id="circle3" class="circle center"></div>
+                        <div id="circle4" class="circle center"></div>
+                        <div id="circle5" class="circle center"></div>
+                        <img class="center precipitationIcon" src="resources/img/SVG/overcast.svg">
+                    </div>
+                </div>
+                <div id="temperature">
+                    <span id="number">23</span>
+                    <div id="celsius"></div>
+                </div>
+            </div>
+            <div id="selectedTown">
+                <span id="townName">Казань</span>
+                <div id="days">
+                    <button id="today" class="day selected">
+                        <img class="precipitationIconSmall"   src="resources/img/SVG/overcastSmall.svg">
+                        <span class="dayText">21 апреля</span>
+                    </button>
+                    <button id="tomorrow" class="day">
+                        <img class="precipitationIconSmall" src="resources/img/SVG/snowSmall.svg" >
+                        <span>22 апреля</span>
+                    </button>
+                    <button id="dayAfterTomorrow" class="day">
+                        <img class="precipitationIconSmall" src="resources/img/SVG/rainSmall.svg">
+                        <span>23 апреля</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

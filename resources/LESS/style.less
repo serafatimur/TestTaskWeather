@@ -1,0 +1,142 @@
+    .flex-display(@display: flex) {
+        display: ~"-webkit-@{display}";
+        display: ~"-ms-@{display}box";
+        display: ~"-ms-@{display}";
+        display: @display;
+    }
+
+    .flex(@columns: initial) {
+    -webkit-flex: @columns;
+        -ms-flex: @columns;
+            flex: @columns;
+    }
+
+    .flex-direction(@direction: row) {
+    -webkit-flex-direction: @direction;
+        -ms-flex-direction: @direction;
+            flex-direction: @direction;
+    }
+
+    .flex-wrap(@wrap: nowrap) {
+    -webkit-flex-wrap: @wrap;
+        -ms-flex-wrap: @wrap;
+            flex-wrap: @wrap;
+    }
+
+    .flex-flow(@flow) {
+    -webkit-flex-flow: @flow;
+        -ms-flex-flow: @flow;
+            flex-flow: @flow;
+    }
+
+    .flex-order(@order: 0) {
+    -webkit-order: @order;
+        -ms-order: @order;
+            order: @order;
+    }
+
+    .flex-grow(@grow: 0) {
+    -webkit-flex-grow: @grow;
+        -ms-flex-grow: @grow;
+            flex-grow: @grow;
+    }
+
+    .flex-shrink(@shrink: 1) {
+    -webkit-flex-shrink: @shrink;
+        -ms-flex-shrink: @shrink;
+            flex-shrink: @shrink;
+    }
+
+    .flex-basis(@width: auto) {
+    -webkit-flex-basis: @width;
+        -ms-flex-basis: @width;
+            flex-basis: @width;
+    }
+
+    .justify-content(@justify: flex-start) {
+    -webkit-justify-content: @justify;
+        -ms-justify-content: @justify;
+            justify-content: @justify;
+    }
+
+    .align-content(@align: stretch) {
+    -webkit-align-content: @align;
+        -ms-align-content: @align;
+            align-content: @align;
+    }
+
+    .align-items(@align: stretch) {
+    -webkit-align-items: @align;
+        -ms-align-items: @align;
+            align-items: @align;
+    }
+
+    .align-self(@align: auto) {
+    -webkit-align-self: @align;
+        -ms-align-self: @align;
+            align-self: @align;
+    }
+
+    html,
+    body {
+        height: 100%;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: -ms-flex;
+        display: flex;
+        -webkit-justify-content: center;
+        -ms-justify-content: center;
+        justify-content: center;
+    }
+
+    #main {
+        background-color: #21a5da;
+        width: 360px;
+        height: 575px;
+        border-radius: 2px;
+        box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: -ms-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    }
+    #selectedDay{
+        height: 68%;
+        .flex-display;
+        .flex-direction(column);
+    }
+    #day {
+        height: 12%;
+        background-color: rgba(255, 255, 255, 0.13);
+        font-size: 13px;
+        color: #ffffff;
+        font-family: "Open Sans";
+        font-weight: 400;
+        text-align: center;
+        .flex-display;
+        .align-items(center);
+        .justify-content(center);
+    }
+    #precipitation{
+        height:60% ;
+        font-size: 24px;
+        color: #ffffff;
+        font-family: "Open Sans";
+        font-weight: 300;
+        text-align: center;
+        .flex-display;
+        .flex-direction(column);
+        .justify-content(center);
+    }
+    #temperature{
+        height: 28% ;
+    }
+    #selectedTown {
+        height: 32%;
+    }

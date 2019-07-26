@@ -1,0 +1,241 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: -ms-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+}
+@media {
+    #main {
+        margin-top:20px; 
+        width: 28vw;
+        height: 90vh;
+        font-size: 100px;
+    }
+}
+#main {
+    margin-top:20px; 
+    background-color: #21a5da;
+    width: 28vw;
+    height: 90vh;
+    border-radius: 2px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+
+#selectedDay {
+    width: 100%;
+	height: 68%;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: -ms-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+#selectedDayText {
+    height: 13%;
+    width: 100%;
+	background-color: rgba(255, 255, 255, 0.13);
+	font-size: 13%;
+	color: #ffffff;
+	font-family: "Open Sans";
+	font-weight: 400;
+	text-align: center;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: -ms-flex;
+	display: flex;
+	-webkit-align-items: center;
+	-ms-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+}
+
+#precipitation {
+    height: 57.3%;
+    width: 100%;
+	font-size: 24%;
+	color: #ffffff;
+	font-family: "Open Sans";  
+    display: -webkit-flex;
+	display: -ms-flexbox;
+	display: -ms-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+	-ms-align-items: center;
+    align-items: center;
+}
+
+#precipitationText {
+    height: 31%;
+    display: -webkit-flex;
+	display: -ms-flexbox;
+	display: -ms-flex;
+    display: flex;
+    -webkit-justify-content: center;
+	-ms-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+	-ms-align-items: center;
+    align-items: center;
+    width: 100%;
+}
+
+#precipitationImage {
+    height: 69%;
+    position: relative;
+    width: 100%;
+}
+
+.center {
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    overflow: auto;
+    margin: auto;
+}
+
+.circle {
+    border-radius: 50%;
+}
+#circle1 {
+    width: 35%;
+    height: 81.52%;
+    background-color: rgba(255, 255, 255, 0.09);
+}
+#circle2 {
+    width: 42%;
+    height: 97.81%;
+    background-color: rgba(255, 255, 255, 0.07);
+}
+#circle3 {
+    width: 48%;
+    height: 111.79%;
+    background-color: rgba(255, 255, 255, 0.09);
+}
+#circle4 {
+    width: 54%;
+    height: 125.76%;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+#circle5 {
+    width: 63%;
+    height: 146.72%;
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+.precipitationIcon {
+    width: 35%;;
+    height: 75%;
+}
+
+#temperature {
+    height: 29.7%;
+    width: 100%;
+    font-size: 116%;
+    letter-spacing: -6px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    line-height: 116%;
+    display: -webkit-flex;
+	display: -ms-flexbox;
+	display: -ms-flex;
+    display: flex;
+    -webkit-justify-content: center;
+	-ms-justify-content: center;
+    justify-content: center;
+}
+#number {
+    height: 100%;
+}
+#celsius {
+    width: 5.16%;
+    border-radius: 50%; 
+    border: 1px solid #ffffff;
+    height: 15.99%;
+}
+
+#selectedTown {
+    height: 32%;
+    display: -webkit-flex;
+	display: -ms-flexbox;
+	display: -ms-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+	-ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+	-ms-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+	-ms-align-items: center;
+    align-items: center;
+    width: 100%;
+}
+#townName {
+    height: 32.4%;
+    font-size: 19%;
+    color: #ffffff;
+    font-family: "Open Sans";
+}
+#days {
+    display: -webkit-flex;
+	display: -ms-flexbox;
+	display: -ms-flex;
+    display: flex;
+    height: 67.6%;
+    width: 100%
+}
+
+.day {
+    width: 33.333%;
+    font-size: 10%;
+    background-color: #21a5da;
+    border: 0px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    text-align: center;
+    display: -webkit-flex;
+	display: -ms-flexbox;
+	display: -ms-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+    -webkit-align-items: center;
+	-ms-align-items: center;
+    align-items: center;
+}
+
+.precipitationIconSmall {
+    width: 70%;;
+    height: 70%;
+}
+
+.selected { 
+    background-color: #1c9dd1;
+}
