@@ -116,9 +116,9 @@ body {
 
 #precipitationImage .wrapper {
     position: relative;
-    width: 15px;;
+    width: 6%;
     height: 0;
-    padding-bottom: 15px;
+    padding-bottom: 6%;
 }
 
 .circle {
@@ -200,9 +200,9 @@ body {
 
 #temperature .wrapper {
     position: relative;
-    width: 4.5px;
+    width: 2%;
     height: 0;
-    padding-bottom: 4.5px;
+    padding-bottom: 2%;
 
 }
 
@@ -274,9 +274,9 @@ body {
 }
 .day .wrapper {
     position: relative;
-    width: 20px;
+    width: 20%;
     height: 0;
-    padding-bottom: 20px;
+    padding-bottom: 20%;
 }
 
 .dayText {
