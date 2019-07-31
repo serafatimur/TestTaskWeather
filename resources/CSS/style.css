@@ -10,19 +10,23 @@ body {
 	-ms-justify-content: center;
 	justify-content: center;
 }
-@media {
+
+@media (min-width: 576px) { 
     #main {
-        margin-top:20px; 
-        width: 28vw;
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+@media (min-width: 768px) { 
+    #main {
+        width: 45vw;
         height: 90vh;
-        font-size: 100px;
     }
 }
 #main {
-    margin-top:20px; 
+    font-size: 13vh;
     background-color: #21a5da;
-    width: 28vw;
-    height: 90vh;
     border-radius: 2px;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
     display: -webkit-flex;
@@ -46,7 +50,7 @@ body {
 	display: flex;
 	-webkit-flex-direction: column;
 	-ms-flex-direction: column;
-	flex-direction: column;
+    flex-direction: column; 
 }
 
 #selectedDayText {
@@ -67,7 +71,7 @@ body {
     align-items: center;
     -webkit-justify-content: center;
 	-ms-justify-content: center;
-	justify-content: center;
+    justify-content: center;
 }
 
 #precipitation {
@@ -106,58 +110,17 @@ body {
     width: 100%;
 }
 
-#precipitationImage {
-    height: 69%;
-    position: relative;
-    width: 100%;
-}
-
-.center {
-    position: absolute;
-    left: 0; top: 0; right: 0; bottom: 0;
-    overflow: auto;
-    margin: auto;
-}
-
-.circle {
-    border-radius: 50%;
-}
-#circle1 {
-    width: 35%;
-    height: 81.52%;
-    background-color: rgba(255, 255, 255, 0.09);
-}
-#circle2 {
-    width: 42%;
-    height: 97.81%;
-    background-color: rgba(255, 255, 255, 0.07);
-}
-#circle3 {
-    width: 48%;
-    height: 111.79%;
-    background-color: rgba(255, 255, 255, 0.09);
-}
-#circle4 {
-    width: 54%;
-    height: 125.76%;
-    background-color: rgba(255, 255, 255, 0.05);
-}
-#circle5 {
-    width: 63%;
-    height: 146.72%;
-    background-color: rgba(255, 255, 255, 0.02);
-}
 
 .precipitationIcon {
     width: 35%;;
-    height: 75%;
+    height: 70%;
 }
 
 #temperature {
     height: 29.7%;
     width: 100%;
     font-size: 116%;
-    letter-spacing: -6px;
+    letter-spacing: -6%;
     color: #ffffff;
     font-family: "Open Sans";
     line-height: 116%;
@@ -171,14 +134,13 @@ body {
 }
 #number {
     height: 100%;
-}
+}   
 #celsius {
+    padding-bottom: 5.16%;
     width: 5.16%;
-    border-radius: 50%; 
-    border: 1px solid #ffffff;
-    height: 15.99%;
+    border: 0.015em solid #ffffff;
+    border-radius: 50%;
 }
-
 #selectedTown {
     height: 32%;
     display: -webkit-flex;
@@ -208,7 +170,7 @@ body {
 	display: -ms-flex;
     display: flex;
     height: 67.6%;
-    width: 100%
+    width: 100%;;
 }
 
 .day {
@@ -232,10 +194,70 @@ body {
 }
 
 .precipitationIconSmall {
-    width: 70%;;
-    height: 70%;
+    width: 100%;
+    height: 65%;
 }
 
+.dayText {
+    height: 35%;
+    display: -webkit-flex;
+	display: -ms-flexbox;
+	display: -ms-flex;
+	display: flex;
+    -webkit-align-items: center;
+	-ms-align-items: center;
+    align-items: center; 
+}
 .selected { 
     background-color: #1c9dd1;
+}
+
+.square-box {
+    position: relative;
+    width: 20%;
+    height: 0;
+    padding-bottom: 20%;
+    left: 40%;
+  }
+  .square-box .circle {
+    position: absolute; 
+    background-color: rgba(255, 255, 255, 0.09);
+    border-radius: 50%;
+    top: 0; bottom: 0; left: 0; right: 0;
+  }
+
+  #precipitationImage {
+    height: 69%;
+    width: 100%;
+}
+.center {
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    overflow: auto;
+    margin: auto;
+}
+
+#circle1 {
+    /* height: 81.52%; */
+    
+}
+#circle2 {
+    background-color: rgba(255, 255, 255, 0.07);
+    width: 42%;
+    /* height: 97.81%; */
+}
+#circle3 {
+    width: 48%;
+    /* height: 111.79%; */
+    background-color: rgba(255, 255, 255, 0.09);
+}
+#circle4 {
+    width: 54%;
+    /* height: 125.76%; */
+    background-color: rgba(255, 255, 255, 0.05);
+}
+#circle5 {
+    width: 63%;
+    /* height: 146.72%; */
+    background-color: rgba(255, 255, 255, 0.02);
 }
