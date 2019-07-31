@@ -19,45 +19,50 @@
                 <div id="precipitation">
                     <div id="precipitationText"><span>Переменная облачность</span></div>
                     <div id="precipitationImage">
-                        <!-- <div class="square-box">
-                            <div id="circle1" class="circle"></div>
+                        <div class="wrapper">
+                            <div id="circle1" class="content circle"></div>
+                            <div id="circle2" class="content circle"></div>
+                            <div id="circle3" class="content circle"></div>
+                            <div id="circle4" class="content circle"></div>
+                            <div id="circle5" class="content circle"></div>
+                            <img id="precipitationIcon" class="content" src="resources/img/SVG/overcast.svg">
                         </div>
-                        <div id="circle2" class="circle center"></div>
-                        <div id="circle3" class="circle center"></div>
-                        <div id="circle4" class="circle center"></div>
-                        <div id="circle5" class="circle center"></div>
-                        <img class="center precipitationIcon" src="resources/img/SVG/overcast.svg"> -->
                     </div>
                 </div>
                 <div id="temperature">
                     <span id="number">23</span>
-                    <!-- <div class="square-box">
-                        <div id="celsius" class="circle">
-                        </div>
-                    </div> -->
+                    <div class="wrapper">
+                        <div id="celsius"> </div>
+                    </div>
                 </div>
             </div>
             <div id="selectedTown">
                 <span id="townName">Казань</span>
                 <div id="days">
-                    <button id="today" class="day selected">
-                        <div class="wrapper">
-                            <img class="content" src="resources/img/SVG/overcast.svg">
+                    <div id="today" class="day selected">
+                        <div class="icon">
+                            <div class="wrapper">
+                                <img class="content" src="resources/img/SVG/overcast.svg">
+                            </div>
                         </div>
                         <div class="dayText"><span>21 апреля</span></div>
-                    </button>
-                    <button id="tomorrow" class="day">
-                        <div class="wrapper">
-                            <img class="content" src="resources/img/SVG/snow.svg" >
+                    </div>
+                    <div id="tomorrow" class="day">
+                        <div class="icon">
+                            <div class="wrapper">
+                                <img class="content" src="resources/img/SVG/snow.svg" >
+                            </div>
                         </div>
                         <div class="dayText"><span>22 апреля</span></div>
-                    </button>
-                    <button id="dayAfterTomorrow" class="day">
-                        <div class="wrapper">
-                            <img class="content" src="resources/img/SVG/rainSmall.svg">
+                    </div>
+                    <div id="dayAfterTomorrow" class="day">
+                        <div class="icon">
+                            <div class="wrapper">
+                                <img class="content" src="resources/img/SVG/rain.svg">
+                            </div>
                         </div>
-                        <div class="dayText"><span>23 апреля</span></div>
-                    </button>
+                        <span class="dayText">23 апреля</span>
+                    </div>
                 </div>
             </div>
         </div>
