@@ -10,21 +10,9 @@ body {
 	-ms-justify-content: center;
 	justify-content: center;
 }
-
-@media (min-width: 576px) { 
-    #main {
-        width: 100vw;
-        height: 100vh;
-    }
-}
-
-@media (min-width: 768px) { 
-    #main {
-        width: 60vw;
-        height: 90vh;
-    }
-}
 #main {
+    width: 100vw;
+    height: 100vh;
     font-size: 13vh;
     background-color: #21a5da;
     border-radius: 2px;
