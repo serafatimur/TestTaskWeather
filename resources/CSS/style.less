@@ -1,80 +1,80 @@
     .flex-display(@display: flex) {
-        display: ~"-webkit-@{display}";
-        display: ~"-ms-@{display}box";
-        display: ~"-ms-@{display}";
+        display:~"-webkit-@{display}";
+        display:~"-ms-@{display}box";
+        display:~"-ms-@{display}";
         display: @display;
     }
 
     .flex(@columns: initial) {
-    -webkit-flex: @columns;
+        -webkit-flex: @columns;
         -ms-flex: @columns;
-            flex: @columns;
+        flex: @columns;
     }
 
     .flex-direction(@direction: row) {
-    -webkit-flex-direction: @direction;
+        -webkit-flex-direction: @direction;
         -ms-flex-direction: @direction;
-            flex-direction: @direction;
+        flex-direction: @direction;
     }
 
     .flex-wrap(@wrap: nowrap) {
-    -webkit-flex-wrap: @wrap;
+        -webkit-flex-wrap: @wrap;
         -ms-flex-wrap: @wrap;
-            flex-wrap: @wrap;
+        flex-wrap: @wrap;
     }
 
     .flex-flow(@flow) {
-    -webkit-flex-flow: @flow;
+        -webkit-flex-flow: @flow;
         -ms-flex-flow: @flow;
-            flex-flow: @flow;
+        flex-flow: @flow;
     }
 
     .flex-order(@order: 0) {
-    -webkit-order: @order;
+        -webkit-order: @order;
         -ms-order: @order;
-            order: @order;
+        order: @order;
     }
 
     .flex-grow(@grow: 0) {
-    -webkit-flex-grow: @grow;
+        -webkit-flex-grow: @grow;
         -ms-flex-grow: @grow;
-            flex-grow: @grow;
+        flex-grow: @grow;
     }
 
     .flex-shrink(@shrink: 1) {
-    -webkit-flex-shrink: @shrink;
+        -webkit-flex-shrink: @shrink;
         -ms-flex-shrink: @shrink;
-            flex-shrink: @shrink;
+        flex-shrink: @shrink;
     }
 
     .flex-basis(@width: auto) {
-    -webkit-flex-basis: @width;
+        -webkit-flex-basis: @width;
         -ms-flex-basis: @width;
-            flex-basis: @width;
+        flex-basis: @width;
     }
 
     .justify-content(@justify: flex-start) {
-    -webkit-justify-content: @justify;
+        -webkit-justify-content: @justify;
         -ms-justify-content: @justify;
-            justify-content: @justify;
+        justify-content: @justify;
     }
 
     .align-content(@align: stretch) {
-    -webkit-align-content: @align;
+        -webkit-align-content: @align;
         -ms-align-content: @align;
-            align-content: @align;
+        align-content: @align;
     }
 
     .align-items(@align: stretch) {
-    -webkit-align-items: @align;
+        -webkit-align-items: @align;
         -ms-align-items: @align;
-            align-items: @align;
+        align-items: @align;
     }
 
     .align-self(@align: auto) {
-    -webkit-align-self: @align;
+        -webkit-align-self: @align;
         -ms-align-self: @align;
-            align-self: @align;
+        align-self: @align;
     }
 
     .wrapper(@width) {
@@ -85,7 +85,10 @@
     }
 
     .position(@distance: 0, @position: absolute) {
-        top: @distance; bottom: @distance; left: @distance; right: @distance;
+        top: @distance;
+        bottom: @distance;
+        left: @distance;
+        right: @distance;
         position: @position;
     }
 
@@ -106,36 +109,36 @@
     }
 
     @media screen and (orientation:portrait) {
-        #selectedDayText {
+        .selectedDayText {
             font-size: 15%;
         }
-    
-        #precipitation {
+
+        .precipitation {
             font-size: 24%;
         }
-    
+
         #townName {
             font-size: 19%;
         }
-    
+
         .dayText {
             font-size: 15%;
         }
     }
-    
+
     @media screen and (orientation:landscape) {
-        #selectedDayText {
+        .selectedDayText {
             font-size: 23%;
         }
-    
-        #precipitation {
+
+        .precipitation {
             font-size: 33%;
         }
-    
+
         #townName {
             font-size: 28%;
         }
-    
+
         .dayText {
             font-size: 23%;
         }
@@ -151,16 +154,18 @@
         .flex-display;
         .flex-direction(column);
         .flex-wrap;
+        overflow: hidden;
     }
-    
+
     #selectedDay {
-        width: 100%;
+        width: 300%;
         height: 68%;
-        .flex-display;
-        .flex-direction(column);
+        .flex-display;    
+        transform: translateX(0%);
+        transition-duration: 1s;    
     }
-    
-    #selectedDayText {
+
+    .selectedDayText {
         height: 13%;
         width: 100%;
         background-color: rgba(255, 255, 255, 0.13);
@@ -172,94 +177,96 @@
         .align-items(center);
         .justify-content(center);
     }
-    
-    #precipitation {
+
+    .precipitation {
         height: 55%;
         width: 100%;
         color: #ffffff;
-        font-family: "Open Sans";  
+        font-family: "Open Sans";
         .flex-display;
         .flex-direction(column);
         .justify-content(center);
         .align-items(center);
         position: relative;
     }
-    
-    #precipitationText {
+
+    .precipitationText {
         height: 31%;
         .flex-display;
         .justify-content(center);
         .align-items(center);
         text-align: center;
     }
-    
-    
-    #precipitationImage{
+
+
+    .precipitationImage {
         height: 69%;
-        width: 100%;    
+        width: 100%;
         .flex-display;
         .justify-content(center);
         .align-items(center);
     }
-    
-    #precipitationImage .wrapper {
+
+    #selectedDay .precipitationImage .wrapper {
         .wrapper(6%);
     }
-    
+
     .circle {
         border-radius: 50%;
+        position: absolute;
     }
-    
-    #circle1 {
+
+    .circle1 {
         .circle(150%, #ffffff, 9);
     }
-    
-    #circle2 {
+
+    .circle2 {
         .circle(178%, #ffffff, 9);
     }
-    
-    #circle3 {
+
+    .circle3 {
         .circle(208%, #ffffff, 7);
     }
-    
-    #circle4 {
+
+    .circle4 {
         .circle(236%, #ffffff, 5);
     }
-    
-    #circle5 {
+
+    .circle5 {
         .circle(274%, #ffffff, 2);
     }
-    
+
     .content {
         .position;
     }
-    
-    #temperature {
+
+    .temperature {
+        width: 100%;
         height: 32%;
         font-size: 116%;
-        letter-spacing: -6%;
+        letter-spacing: -0.02em;
         color: #ffffff;
         font-family: "Open Sans";
         line-height: 116%;
         .flex-display;
         .justify-content(center);
     }
-    
-    #number {
+
+    .number {
         height: 100%;
-    
-    }   
-    
-    #celsius {
+
+    }
+
+    .celsius {
         border: 0.0175em solid #ffffff;
         border-radius: 50%;
         .position;
     }
-    
-    #temperature .wrapper {
+
+    #selectedDay .temperature .wrapper {
         .wrapper(2%);
     }
-    
+
     #selectedTown {
         height: 32%;
         width: 100%;
@@ -268,19 +275,20 @@
         .justify-content(center);
         .align-items(center);
     }
-    
+
     #townName {
         height: 32.4%;
         color: #ffffff;
         font-family: "Open Sans";
     }
-    
+
     #days {
         .flex-display;
         height: 67.6%;
-        width: 100%;;
+        width: 100%;
+        ;
     }
-    
+
     .day {
         width: 33.333%;
         background-color: #21a5da;
@@ -292,6 +300,7 @@
         .flex-direction(column);
         .align-items(center);
     }
+
     .icon {
         width: 100%;
         height: 65%;
@@ -299,16 +308,18 @@
         .flex-direction(column);
         .align-items(center);
     }
+
     .day .wrapper {
-       .wrapper(20%);
+        .wrapper(20%);
     }
-    
+
     .dayText {
         height: 35%;
         max-width: 80%;
         .flex-display;
         .align-items(center);
     }
-    .selected { 
+
+    .selected {
         background-color: #1c9dd1;
     }
