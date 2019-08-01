@@ -11,6 +11,43 @@ body {
 	justify-content: center;
 }
 
+@media screen and (orientation:portrait) {
+    #selectedDayText {
+        font-size: 15%;
+    }
+
+    #precipitation {
+        font-size: 24%;
+    }
+
+    #townName {
+        font-size: 19%;
+    }
+
+    .dayText {
+        font-size: 15%;
+    }
+}
+
+@media screen and (orientation:landscape) {
+    #selectedDayText {
+        font-size: 23%;
+    }
+
+    #precipitation {
+        font-size: 33%;
+    }
+
+    #townName {
+        font-size: 28%;
+    }
+
+    .dayText {
+        font-size: 23%;
+    }
+}
+
+    
 #main {
     width: 100vw;
     height: 100vh;
@@ -46,7 +83,6 @@ body {
     height: 13%;
     width: 100%;
 	background-color: rgba(255, 255, 255, 0.13);
-	font-size: 15%;
 	color: #ffffff;
 	font-family: "Open Sans";
 	font-weight: 400;
@@ -66,7 +102,6 @@ body {
 #precipitation {
     height: 55%;
     width: 100%;
-	font-size: 24%;
 	color: #ffffff;
     font-family: "Open Sans";  
     display: -webkit-flex;
@@ -228,7 +263,6 @@ body {
 
 #townName {
     height: 32.4%;
-    font-size: 19%;
     color: #ffffff;
     font-family: "Open Sans";
 }
@@ -284,7 +318,6 @@ body {
 
 .dayText {
     height: 35%;
-    font-size: 15%;
     display: -webkit-flex;
 	display: -ms-flexbox;
 	display: -ms-flex;
