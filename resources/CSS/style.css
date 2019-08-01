@@ -97,8 +97,10 @@ body {
     -webkit-align-items: center;
 	-ms-align-items: center;
     align-items: center;
-    width: 100%;
+    text-align: center;
 }
+
+
 #precipitationImage{
     height: 69%;
     width: 100%;    
@@ -277,6 +279,7 @@ body {
     width: 20%;
     height: 0;
     padding-bottom: 20%;
+    max-width: 80%;
 }
 
 .dayText {
