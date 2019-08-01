@@ -1,7 +1,7 @@
 html,
 body {
-    height: 100%;
-    width: 100%;
+	height: 100%;
+	width: 100%;
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: -ms-flex;
@@ -11,64 +11,63 @@ body {
 	justify-content: center;
 }
 
-@media screen and (orientation:portrait) {
-    #selectedDayText {
-        font-size: 15%;
-    }
+@media screen and (orientation: portrait) {
+	#selectedDayText {
+		font-size: 15%;
+	}
 
-    #precipitation {
-        font-size: 24%;
-    }
+	#precipitation {
+		font-size: 24%;
+	}
 
-    #townName {
-        font-size: 19%;
-    }
+	#townName {
+		font-size: 19%;
+	}
 
-    .dayText {
-        font-size: 15%;
-    }
+	.dayText {
+		font-size: 15%;
+	}
 }
 
-@media screen and (orientation:landscape) {
-    #selectedDayText {
-        font-size: 23%;
-    }
+@media screen and (orientation: landscape) {
+	#selectedDayText {
+		font-size: 23%;
+	}
 
-    #precipitation {
-        font-size: 33%;
-    }
+	#precipitation {
+		font-size: 33%;
+	}
 
-    #townName {
-        font-size: 28%;
-    }
+	#townName {
+		font-size: 28%;
+	}
 
-    .dayText {
-        font-size: 23%;
-    }
+	.dayText {
+		font-size: 23%;
+	}
 }
 
-    
 #main {
-    width: 100vw;
-    height: 100vh;
-    font-size: 13vh;
-    background-color: #21a5da;
-    border-radius: 2px;
-    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: -ms-flex;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
+	width: 100vw;
+	height: 100vh;
+	font-size: 13vh;
+	background-color: #21a5da;
+	border-radius: 2px;
+	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: -ms-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
 }
 
 #selectedDay {
-    width: 100%;
+	width: 100%;
 	height: 68%;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -76,12 +75,12 @@ body {
 	display: flex;
 	-webkit-flex-direction: column;
 	-ms-flex-direction: column;
-    flex-direction: column; 
+	flex-direction: column;
 }
 
 #selectedDayText {
-    height: 13%;
-    width: 100%;
+	height: 13%;
+	width: 100%;
 	background-color: rgba(255, 255, 255, 0.13);
 	color: #ffffff;
 	font-family: "Open Sans";
@@ -93,18 +92,18 @@ body {
 	display: flex;
 	-webkit-align-items: center;
 	-ms-align-items: center;
-    align-items: center;
-    -webkit-justify-content: center;
+	align-items: center;
+	-webkit-justify-content: center;
 	-ms-justify-content: center;
-    justify-content: center;
+	justify-content: center;
 }
 
 #precipitation {
-    height: 55%;
-    width: 100%;
+	height: 55%;
+	width: 100%;
 	color: #ffffff;
-    font-family: "Open Sans";  
-    display: -webkit-flex;
+	font-family: "Open Sans";
+	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: -ms-flex;
 	display: flex;
@@ -113,219 +112,225 @@ body {
 	flex-direction: column;
 	-webkit-justify-content: center;
 	-ms-justify-content: center;
-    justify-content: center;
-    -webkit-align-items: center;
+	justify-content: center;
+	-webkit-align-items: center;
 	-ms-align-items: center;
-    align-items: center;
-    position: relative;
+	align-items: center;
+	position: relative;
 }
 
 #precipitationText {
-    height: 31%;
-    display: -webkit-flex;
+	height: 31%;
+	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: -ms-flex;
-    display: flex;
-    -webkit-justify-content: center;
+	display: flex;
+	-webkit-justify-content: center;
 	-ms-justify-content: center;
-    justify-content: center;
-    -webkit-align-items: center;
+	justify-content: center;
+	-webkit-align-items: center;
 	-ms-align-items: center;
-    align-items: center;
-    text-align: center;
+	align-items: center;
+	text-align: center;
 }
 
-
-#precipitationImage{
-    height: 69%;
-    width: 100%;    
-    display: -webkit-flex;
+#precipitationImage {
+	height: 69%;
+	width: 100%;
+	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: -ms-flex;
-    display: flex;
-    -webkit-justify-content: center;
+	display: flex;
+	-webkit-justify-content: center;
 	-ms-justify-content: center;
-    justify-content: center;
-    -webkit-align-items: center;
+	justify-content: center;
+	-webkit-align-items: center;
 	-ms-align-items: center;
-    align-items: center;
+	align-items: center;
 }
 
 #precipitationImage .wrapper {
-    position: relative;
-    width: 6%;
-    height: 0;
-    padding-bottom: 6%;
+	height: 0;
+	width: 6%;
+	padding-bottom: 6%;
+	position: relative;
 }
 
 .circle {
-    border-radius: 50%;
+	border-radius: 50%;
 }
 
 #circle1 {
-    background-color: rgba(255, 255, 255, 0.09);
-    width: 150%;
-    padding-bottom: 150%;
-    top: -25%;
-    left: -25%;
+	background-color: rgba(255, 255, 255, 0.09);
+	width: 150%;
+	padding-bottom: 150%;
+	top: -25%;
+	left: -25%;
 }
 
 #circle2 {
-    background-color: rgba(255, 255, 255, 0.09);
-    width: 178%;
-    padding-bottom: 178%;
-    top: -39%;
-    left: -39%;
+	background-color: rgba(255, 255, 255, 0.09);
+	width: 178%;
+	padding-bottom: 178%;
+	top: -39%;
+	left: -39%;
 }
 
 #circle3 {
-    background-color: rgba(255, 255, 255, 0.07);
-    width: 208%;
-    padding-bottom: 208%;
-    top: -54%;
-    left: -54%;
+	background-color: rgba(255, 255, 255, 0.07);
+	width: 208%;
+	padding-bottom: 208%;
+	top: -54%;
+	left: -54%;
 }
 
 #circle4 {
-    background-color: rgba(255, 255, 255, 0.05);
-    width: 236%;
-    padding-bottom: 236%;
-    top: -68%;
-    left: -68%;
+	background-color: rgba(255, 255, 255, 0.05);
+	width: 236%;
+	padding-bottom: 236%;
+	top: -68%;
+	left: -68%;
 }
 
 #circle5 {
-    background-color: rgba(255, 255, 255, 0.02);
-    width: 274%;
-    padding-bottom: 274%;
-    top: -87%;
-    left: -87%;
+	background-color: rgba(255, 255, 255, 0.02);
+	width: 274%;
+	padding-bottom: 274%;
+	top: -87%;
+	left: -87%;
 }
 
 .content {
-    position: absolute;
-    top: 0; bottom: 0; left: 0; right: 0;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position: absolute;
 }
 
 #temperature {
-    height: 32%;
-    font-size: 116%;
-    letter-spacing: -6%;
-    color: #ffffff;
-    font-family: "Open Sans";
-    line-height: 116%;
-    display: -webkit-flex;
+	height: 32%;
+	font-size: 116%;
+	letter-spacing: -6%;
+	color: #ffffff;
+	font-family: "Open Sans";
+	line-height: 116%;
+	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: -ms-flex;
-    display: flex;
-    -webkit-justify-content: center;
+	display: flex;
+	-webkit-justify-content: center;
 	-ms-justify-content: center;
-    justify-content: center;
+	justify-content: center;
 }
 
 #number {
-    height: 100%;
-
-}   
+	height: 100%;
+}
 
 #celsius {
-    position: absolute;
-    border: 0.0175em solid #ffffff;
-    border-radius: 50%;
-    top: 0; bottom: 0; left: 0; right: 0;
+	border: 0.0175em solid #ffffff;
+	border-radius: 50%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position: absolute;
 }
 
 #temperature .wrapper {
-    position: relative;
-    width: 2%;
-    height: 0;
-    padding-bottom: 2%;
-
+	height: 0;
+	width: 2%;
+	padding-bottom: 2%;
+	position: relative;
 }
 
 #selectedTown {
-    height: 32%;
-    display: -webkit-flex;
+	height: 32%;
+	width: 100%;
+	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: -ms-flex;
-    display: flex;
-    -webkit-flex-direction: column;
+	display: flex;
+	-webkit-flex-direction: column;
 	-ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-justify-content: center;
+	flex-direction: column;
+	-webkit-justify-content: center;
 	-ms-justify-content: center;
-    justify-content: center;
-    -webkit-align-items: center;
+	justify-content: center;
+	-webkit-align-items: center;
 	-ms-align-items: center;
-    align-items: center;
-    width: 100%;
+	align-items: center;
 }
 
 #townName {
-    height: 32.4%;
-    color: #ffffff;
-    font-family: "Open Sans";
+	height: 32.4%;
+	color: #ffffff;
+	font-family: "Open Sans";
 }
 
 #days {
-    display: -webkit-flex;
+	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: -ms-flex;
-    display: flex;
-    height: 67.6%;
-    width: 100%;;
+	display: flex;
+	height: 67.6%;
+	width: 100%;
 }
 
 .day {
-    width: 33.333%;
-    background-color: #21a5da;
-    border: 0px;
-    color: #ffffff;
-    font-family: "Open Sans";
-    text-align: center;
-    display: -webkit-flex;
+	width: 33.333%;
+	background-color: #21a5da;
+	border: 0px;
+	color: #ffffff;
+	font-family: "Open Sans";
+	text-align: center;
+	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: -ms-flex;
 	display: flex;
 	-webkit-flex-direction: column;
 	-ms-flex-direction: column;
 	flex-direction: column;
-    -webkit-align-items: center;
+	-webkit-align-items: center;
 	-ms-align-items: center;
-    align-items: center;
+	align-items: center;
 }
+
 .icon {
-    width: 100%;
-    height: 65%;
-    display: -webkit-flex;
+	width: 100%;
+	height: 65%;
+	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: -ms-flex;
 	display: flex;
 	-webkit-flex-direction: column;
 	-ms-flex-direction: column;
 	flex-direction: column;
-    -webkit-align-items: center;
+	-webkit-align-items: center;
 	-ms-align-items: center;
-    align-items: center;
+	align-items: center;
 }
+
 .day .wrapper {
-    position: relative;
-    width: 20%;
-    height: 0;
-    padding-bottom: 20%;
-    max-width: 80%;
+	height: 0;
+	width: 20%;
+	padding-bottom: 20%;
+	position: relative;
 }
 
 .dayText {
-    height: 35%;
-    display: -webkit-flex;
+	height: 35%;
+	max-width: 80%;
+	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: -ms-flex;
 	display: flex;
-    -webkit-align-items: center;
+	-webkit-align-items: center;
 	-ms-align-items: center;
-    align-items: center; 
+	align-items: center;
 }
-.selected { 
-    background-color: #1c9dd1;
+
+.selected {
+	background-color: #1c9dd1;
 }
