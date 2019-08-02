@@ -31,6 +31,7 @@ window.onresize = function () {
 }
 
 function resize() {
+    selectedDayElement.style.transitionProperty = "none";
     let ratio = document.body.clientWidth / document.body.clientHeight;
     let circleWidth = 14 / ratio;
     let celsiusWidth = 3 / ratio;
@@ -61,5 +62,6 @@ function resize() {
 }
 
 function translateX(coord) {
+    selectedDayElement.style.transitionProperty = "transform";
     selectedDayElement.style.transform = "translateX(" + coord + ")";
 }

@@ -100,6 +100,12 @@
         left: ((100 - @width)/2);
     }
 
+    .transition(@params) {
+        -webkit-transition: @params;
+        -moz-transition: @params;
+        -o-transition: @params;
+        transition: @params;
+    }
     .transition-duration(@time) {
         -webkit-transition-duration: @time;
         -moz-transition-duration: @time;
@@ -175,9 +181,9 @@
         height: 68%;
         .flex-display;    
         transform: translateX(0%);
-        .transition-duration(1s);   
-        .transition-property(translateX);
         position: fixed;
+        .transition-duration(1s);   
+        .transition-property(none);
     }
 
     #selectedDay .day {

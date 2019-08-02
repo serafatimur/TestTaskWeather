@@ -65,15 +65,15 @@ body {
   display: -ms-flex;
   display: flex;
   transform: translateX(0%);
+  position: fixed;
   -webkit-transition-duration: 1s;
   -moz-transition-duration: 1s;
   -o-transition-duration: 1s;
   transition-duration: 1s;
-  -webkit-transition-property: translateX;
-  -moz-transition-property: translateX;
-  -o-transition-property: translateX;
-  transition-property: translateX;
-  position: fixed;
+  -webkit-transition-property: none;
+  -moz-transition-property: none;
+  -o-transition-property: none;
+  transition-property: none;
 }
 #selectedDay .day {
   min-width: 100vw;
