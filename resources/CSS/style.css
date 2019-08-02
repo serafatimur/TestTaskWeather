@@ -73,6 +73,7 @@ body {
   -moz-transition-property: transform;
   -o-transition-property: transform;
   transition-property: transform;
+  position: fixed;
 }
 #selectedDay .day {
   min-width: 100vw;
@@ -246,6 +247,8 @@ body {
   -webkit-align-items: center;
   -ms-align-items: center;
   align-items: center;
+  position: fixed;
+  top: 68%;
 }
 #townName {
   height: 32.4%;
