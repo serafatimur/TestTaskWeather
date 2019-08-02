@@ -11,14 +11,17 @@ window.onload = function () {
     celsiusWrapperArray = document.getElementsByClassName("temperature");
     iconsArray = document.getElementsByClassName("icon");
     resize();
-    
+
     for (let i = 0; i < daysChildrenElementsArray.length; i++) {
-        daysChildrenElementsArray[i].onclick = function()  {
-            translateX(-i*100+"vw");
-            for (let j = 0; j < daysChildrenElementsArray.length; j ++) {
-                daysChildrenElementsArray[j].classList.remove("selected");
+        daysChildrenElementsArray[i].onclick = function () {
+            if (!daysChildrenElementsArray[i].classList.contains("selected")) {
+                window.getSelection().removeAllRanges();
+                translateX(-i * 100 + "vw");
+                for (let j = 0; j < daysChildrenElementsArray.length; j++) {
+                    daysChildrenElementsArray[j].classList.remove("selected");
+                }
+                daysChildrenElementsArray[i].classList.add("selected");
             }
-            daysChildrenElementsArray[i].classList.add("selected");
         }
     }
 }
@@ -58,5 +61,5 @@ function resize() {
 }
 
 function translateX(coord) {
-    selectedDayElement.style.transform = "translateX(" + coord +")";
+    selectedDayElement.style.transform = "translateX(" + coord + ")";
 }
