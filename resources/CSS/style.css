@@ -69,10 +69,10 @@ body {
   -moz-transition-duration: 1s;
   -o-transition-duration: 1s;
   transition-duration: 1s;
-  -webkit-transition-property: transform;
-  -moz-transition-property: transform;
-  -o-transition-property: transform;
-  transition-property: transform;
+  -webkit-transition-property: translateX;
+  -moz-transition-property: translateX;
+  -o-transition-property: translateX;
+  transition-property: translateX;
   position: fixed;
 }
 #selectedDay .day {
